@@ -28,7 +28,7 @@ def search_fofa():
         else:
             url = "http://"+ i + "/general/vmeet/wbUpload.php"
         try:
-            rep = requests.session().get(url)
+            rep = requests.session().get(url,allow_redirects=False)
             print(url + "----" + "[" + str(rep.status_code) + "]")
         except:
             print(url + "----" + "[连接失败]")
