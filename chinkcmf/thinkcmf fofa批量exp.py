@@ -4,7 +4,7 @@ import requests
 from requests import exceptions
 
 if __name__ == "__main__":
-    email, key = ('744083645@qq.com','d96ed56cdc4c344d8f2418ca7fcb169e')
+    email, key = ('74@qq.com','d96ed56cd')
     client = fofa.Client(email, key)
     query_str = 'app="thinkcmf"'
     with open('results.txt','w') as f:
